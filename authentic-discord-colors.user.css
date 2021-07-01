@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           authentic-discord-colors
 @namespace      Authentic Discord Colors
-@version        1.0.0
+@version        1.0.1
 @description    Authentic discord colors
 @author         Yomna (https://github.com/Yxmna/)
 @homepageURL    https://github.com/Yxmna/authentic-discord-colors-theme/
@@ -9,63 +9,68 @@
 @license        GPL-3.0
 ==/UserStyle== */
 @-moz-document domain("discord.com") {
-:root {
-    --green: #43b581;
-    --blue: #7289da;
-    --brand-experiment: #7289da;
-    --brand-experiment-600: #7289da;
-    --brand-experiment-560: #7289da;
-}
+    :root {
+        --green: #43b581;
+        --blue: #7289da;
+        --brand-experiment: #7289da;
+        --brand-experiment-600: #7289da;
+        --brand-experiment-560: #7289da;
+    }
 
-/* FONT */
-*[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
-    color: var(--green) !important;
-}
+    /*FIX BOUTTON */
+    button[aria-label="Envoyer un cadeau"],
+    button[aria-label="Ouvrir le sélecteur d'autocollant"] {
+        display: none;
+    }
 
-/* CHECKED */
-.checkmark-3rush5 {
-    background-color: var(--green) !important;
-}
+    /* FONT */
+    *[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
+        color: var(--green) !important;
+    }
 
-/* BUTTONS */
-.lookFilled-1Gx00P.colorGreen-29iAKY {
-    background-color: var(--green) !important;
-}
+    /* CHECKED */
+    .checkmark-3rush5 {
+        background-color: var(--green) !important;
+    }
 
+    /* BUTTONS */
+    .lookFilled-1Gx00P.colorGreen-29iAKY {
+        background-color: var(--green) !important;
+    }
 
-/* ONLINE */
-*[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
-    fill: var(--green) !important;
-}
+    /* ONLINE */
+    *[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+        fill: var(--green) !important;
+    }
 
-/* ON/OFF */
-*[style="opacity: 1; background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
-    background-color: var(--green) !important;
-}
+    /* ON/OFF */
+    *[style="opacity: 1; background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
+        background-color: var(--green) !important;
+    }
 
-/* BUTTONS */
-*[style="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%); color: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);"] {
-    background-color: var(--green) !important;
-}
+    /* BUTTONS */
+    *[style="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%); color: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);"] {
+        background-color: var(--green) !important;
+    }
 
+    /* BUTTONS */
+    .lookFilled-1Gx00P.colorBrand-3pXr91 {
+        background-color: var(--blue);
+    }
 
-/* BUTTONS */
-.lookFilled-1Gx00P.colorBrand-3pXr91 {
-    background-color: var(--blue);
-}
+    /* BOT */
+    .botTagRegular-2HEhHi {
+        background-color: var(--blue);
+    }
 
-/* BOT */
-.botTagRegular-2HEhHi {
-    background-color: var(--blue);
-}
+    /* MENTION HOVER */
+    .interactive:hover {
+        background-color: var(--blue);
+    }
 
-/* MENTION HOVER */
-.interactive:hover {
-    background-color: var(--blue);
-}
-
-/* LOGO HOVER */
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
-    background-color: var(--blue);
-}
+    /* LOGO HOVER */
+    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+    .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+        background-color: var(--blue);
+    }
 }
