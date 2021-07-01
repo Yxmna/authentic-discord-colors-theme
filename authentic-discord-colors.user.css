@@ -27,9 +27,10 @@
     *[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
         color: var(--green) !important;
     }
-
+    
     /* CHECKED */
-    .checkmark-3rush5 {
+    .checkmark-3rush5,
+    .allow-1PzSY3.selected-2YhbGh {
         background-color: var(--green) !important;
     }
 
